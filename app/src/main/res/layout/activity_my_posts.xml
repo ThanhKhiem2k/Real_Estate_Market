@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F0F2F5"
+    tools:context=".Activity.MyPostsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.yalantis.phoenix.PullToRefreshView
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listView_MyPosts"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.yalantis.phoenix.PullToRefreshView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="20sp"
+            android:onClick="MoveToAddPost"
+            android:src="@drawable/icons8addlist64"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout >
+</LinearLayout>

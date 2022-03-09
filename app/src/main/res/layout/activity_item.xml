@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".Activity.ItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/Slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:ignore="ScrollViewSize,UselessLeaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textViewNameProject_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:text="Đang tải..."
+                android:textColor="#000"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPrice_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:paddingBottom="10sp"
+                        android:text="Đang tải..."
+                        android:textColor="#CD0E45"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewType_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:paddingBottom="10sp"
+                        android:text="Đang tải..."
+                        android:textColor="#000"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPhoneNumber_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:paddingBottom="10sp"
+                        android:text="Đang tải..."
+                        android:textColor="#676CFF"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/customborderprofile"
+                    android:weightSum="10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewTTUserPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Thông tin người đăng"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:src="@drawable/avatar_default"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+
+                    <TextView
+                        android:id="@+id/textViewNameTT"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_margin="2sp"
+                        android:gravity="center"
+                        android:text="Đang tải..."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView_EmailTT"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:text="Đang tải..."
+                        android:textColor="#000"
+                        android:textColorLink="#003BED"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewAddress_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Đang tải..."
+                android:textColor="#676CFF"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewDetail_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:text="Đang tải..."
+                    android:textColor="#000"
+                    android:autoSizeMaxTextSize="25sp"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

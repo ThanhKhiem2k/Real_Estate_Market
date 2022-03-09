@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Real_Estate_Market</string>
+    <string name="ch_o_b_n_n_v_i_ch_b_t_ng_s_n">Chào bạn đến với chợ bất động sản</string>
+    <string name="nh_p_email_c_a_b_n">Nhập email của bạn</string>
+    <string name="nh_p_m_t_kh_u_c_a_b_n">Nhập mật khẩu của bạn</string>
+    <string name="ti_p_t_c">Tiếp tục</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="ch_a_c_t_i_kho_n">Chưa có tài khoản?</string>
+    <string name="ng_k_ngay">Đăng ký ngay</string>
+    <string name="todo">TODO</string>
+    <string name="ng_k">Đăng kí</string>
+    <string name="t_o_m_t_kh_u_m_i">Tạo mật khẩu mới</string>
+    <string name="x_c_nh_n_m_t_kh_u">Xác nhận mật khẩu</string>
+    <string name="b_n_c_t_i_kho_n">Bạn đã có tài khoản?</string>
+    <string name="ng_k_tham_gia_ngay">Đăng kí để tham gia ngay!!!</string>
+    <string-array name="stype">
+        <item>Căn hộ/Chung cư</item>
+        <item>Nhà ở</item>
+        <item>Đất</item>
+        <item>Văn phòng, Mặt bằng kinh doanh</item>
+        <item>Phòng trọ</item>
+    </string-array>
+
+</resources>

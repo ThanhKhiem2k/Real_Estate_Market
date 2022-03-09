@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity.MyProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        tools:ignore="Suspicious0dp"
+        tools:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="10"
+            android:background="@drawable/test"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/avatar_default"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:weightSum="20"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_Name"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="5sp"
+                android:text="Họ và tên"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Name_Output"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:text="Chưa có thông tin"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/imageView_EditIcon1"
+                    android:layout_width="41sp"
+                    android:layout_height="40sp"
+                    android:onClick="ToEditProfile"
+                    app:srcCompat="@drawable/icons8edit64" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Sex"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10sp"
+                android:text="Giới tính"
+                android:textColor="#000"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Sex_Output"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Chưa có thông tin"
+                    android:textColor="#000"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_EditIcon2"
+                    android:layout_width="41sp"
+                    android:layout_height="40sp"
+                    android:onClick="ToEditProfile"
+                    app:srcCompat="@drawable/icons8edit64" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Email"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10sp"
+                android:text="Email"
+                android:textColor="#000"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="2.5"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Email_Output"
+                    android:layout_width="0dp"
+                    android:layout_weight="8.5"
+                    android:layout_height="match_parent"
+                    android:text="Chưa có thông tin"
+                    android:textColor="#000"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_EditIcon3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:onClick="ToEditProfile"
+                    app:srcCompat="@drawable/icons8edit64" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="5sp"
+                android:layout_marginLeft="10sp"
+                android:text="Địa chỉ"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Address_Output"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Chưa có thông tin"
+                    android:textColor="#000"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:id="@+id/imageView_EditIcon4"
+                    android:layout_width="41sp"
+                    android:layout_height="40sp"
+                    android:onClick="ToEditProfile"
+                    app:srcCompat="@drawable/icons8edit64" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_NPhone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10sp"
+                android:text="Số điện thoại"
+                android:textColor="#000"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_NPhone_Output"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Chưa có thông tin"
+                    android:textColor="#000"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_EditIcon5"
+                    android:layout_width="41sp"
+                    android:layout_height="40sp"
+                    android:onClick="ToEditProfile"
+                    app:srcCompat="@drawable/icons8edit64" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#6200EE"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_changePassword"
+            style="@style/FirebaseUI.Button.AccountChooser.icons8keepass64"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="Thay đổi mật khẩu"
+            android:textSize="20sp"
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#A576C6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_signOut"
+            style="@style/FirebaseUI.Button.AccountChooser.icons8signout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="Đăng xuất"
+            android:textSize="20sp"
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+</LinearLayout>

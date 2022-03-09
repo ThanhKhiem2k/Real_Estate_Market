@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.icons8keepass64">
+        <item name="drawableStartCompat">@drawable/icons8keepass64</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.icons8signout">
+        <item name="drawableStartCompat">@drawable/icons8logout64</item>
+        <item name="android:background">#A576C6</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+</resources>

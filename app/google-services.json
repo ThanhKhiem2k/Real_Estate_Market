@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "908832254418",
+    "firebase_url": "https://real-estate-market-8fcf8-default-rtdb.firebaseio.com",
+    "project_id": "real-estate-market-8fcf8",
+    "storage_bucket": "real-estate-market-8fcf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908832254418:android:a6b91a355b9277c73a400b",
+        "android_client_info": {
+          "package_name": "com.example.real_estate_market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908832254418-i2s5msqjpod4lg8h6g2bmeke00694626.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.real_estate_market",
+            "certificate_hash": "07178a8d9f5e2264a12629910e8442be2c1a24b8"
+          }
+        },
+        {
+          "client_id": "908832254418-bl3ci5iivr9i1ngvlqu7404rc2jq49qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW2AbjBjtoMVWkq-aqDKBvU115OevmmXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908832254418-bl3ci5iivr9i1ngvlqu7404rc2jq49qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

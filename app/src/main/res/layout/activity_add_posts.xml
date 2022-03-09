@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F2F5"
+    android:weightSum="21"
+    tools:context=".Activity.AddPostsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:weightSum="5"
+        android:background="#68BDE3"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewChuDeTrang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Trang Đăng Tin"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="32sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="30sp" />
+        <LinearLayout
+            android:id="@+id/linearLayoutPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5sp"
+            android:weightSum="5"
+            android:layout_gravity="center"
+            android:background="@drawable/customborder"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageViewPost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                app:srcCompat="@drawable/icons8add64" />
+            <TextView
+                android:id="@+id/textViewPost"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:autoSizeMaxTextSize="32sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:text="Đăng tin" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewStype"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Chọn loại bất động sản"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewStype"
+            android:layout_width="match_parent"
+            android:background="@drawable/customborder_edittext"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:hint="Nhập loại bất động sản"
+            android:textColorHint="#757575"
+            android:textSize="17sp"
+            android:nextFocusDown="@+id/textViewName" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Tên khu dân cư / dự án"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/customborder_edittext"
+            android:layout_weight="3"
+            android:textSize="17sp"
+            android:hint="Nhập tên dự án"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:text="Chi tiết địa chỉ"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/customborder_edittext"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="Nhập địa chỉ dự án"
+            android:inputType="textPersonName"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:text="Giá trung bình (VNĐ)"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:ems="10"
+            android:background="@drawable/customborder_edittext"
+            android:hint=" Nhập giá trị trung bình của dự án"
+            android:inputType="number"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:text="Số điện thoại liên hệ"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextProjectPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:hint="Nhập sdt khi cần liên hệ"
+            android:background="@drawable/customborder_edittext"
+            android:inputType="phone"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buttonSelectIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Chọn ảnh"
+            android:textStyle="italic"
+            android:textColor="#BA117AD5"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/GridViewIMG"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:numColumns="3"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_margin="5sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:weightSum="3"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewDetail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1.2"-->
+<!--            android:text="Chi tiết dự án"-->
+<!--            android:layout_margin="5sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:autoSizeMaxTextSize="25sp"-->
+<!--            android:autoSizeMinTextSize="10sp"-->
+<!--            android:autoSizeStepGranularity="2sp"-->
+<!--            android:autoSizeTextType="uniform"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextTextMultiLineDetail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1.8"-->
+<!--            android:autoSizeMaxTextSize="23sp"-->
+<!--            android:autoSizeMinTextSize="10sp"-->
+<!--            android:background="@drawable/customborder_edittext"-->
+<!--            android:autoSizeStepGranularity="2sp"-->
+<!--            android:autoSizeTextType="uniform"-->
+<!--            android:textSize="17sp"-->
+<!--            android:gravity="start|top"-->
+<!--            android:hint="Nhập chi tiết dự án"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"/>-->
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:weightSum="7"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Chi tiết dự án"
+            android:textColor="#000"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLineDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/customborder_edittext"
+            android:layout_weight="5"
+            android:textSize="17sp"
+            android:hint="Nhập chi tiết dự án"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+</LinearLayout>
